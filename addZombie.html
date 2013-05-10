@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- Joshua Whitney -->
+<!-- VFW 1305 -->
+<!-- Assignement 1 -->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="A hit list of dangerous zombies." />
+		<meta name="keywords" content="zombies,hitman,hitlist,zombie comedy" />
+		<meta name="ROBOTS" content="index, nofollow" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<meta name="author" content="Joshua Whitney" />
+		
+		
+
+
+		<title>Zombie Hit List</title>	
+	</head>
+
+	<body>
+		<div id="container">
+			<header>
+				<h1>ZOMBIE HIT LIST</h1>
+			</header>
+			<nav id="nav1">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="addZombie.html">ADD ZOMBIE!</a></li>
+					<li><a href="#" id="showzombie">SHOW ZOMBIE</a></li>
+					<li><a href="#" id="clearzombie">CLEAR ZOMBIE</a></li>
+				</ul>
+			</nav>
+			
+			<form action="#" method="post" id="myform">
+				<fieldset id="border">
+					<legend>CLIENT INFORMATION</legend>
+				<div id="client" class="labelHead"><label class="headLabel">PLEASE REGISTER BEFORE ADDING A ZOMBIE</label></div>
+					<input type="text" id="fname" value="fname"  /><br>
+					<input type="text" id="lname" value="Last Name"  /><br>
+					<input type="email" id="clientemail" placeholder="Email Address"  /><br>
+					<input type="tel" id="clienttelephone" placeholder="1-111-111-1111" /><br>
+				</fieldset><br>
+				<fieldset>
+					<legend>NEW ZOMBIE INFORMATION</legend>
+					
+		
+				<div id="zname" class="labelHead"><label class="headLabel">ENTER ZOMBIES NAME</label></div>
+					<label for="firstname">First Name:</label>
+					<input type="text" id="firstname" placeholder="FirstName" /><br>
+					<label for="lastname">Last Name:</label>
+					<input type="text" id="lastname" placeholder="LastName" /><br>
+			
+				
+				<label class="headLabel">IS THE ZOMBIE MALE OR FEMALE?</label><br>
+					<input type="radio" name="sex" value="male">Male<br>
+					<input type="radio" name="sex" value="female">Female<br>
+				
+				<label class="headLabel">WHAT PRIORITY SHOULD THIS BE?</label><br>
+				<div id="priorityCheck">
+					<input type="checkbox" id="immediate" name="priority" value="Immediate">Immediate!<br>
+					<input type="checkbox" id="high" name="priority" value="High">High<br>
+					<input type="checkbox" id="medium" name="priority" value="Medium">Medium<br>
+					<input type="checkbox" id="low" name="priority" value="Low">Low<br>
+					<input type="checkbox" id="whenever" name="priority" value="Whenever">When You Get Around To It<br>
+				</div>
+				<label class="headLabel">PLEASE SELECT YOUR WEAPON OF CHOICE</label><br>
+				<select id="weapons" form="myform">
+					<option value="Gun" id="gun" name="weapons">GUN</option>
+					<option value="Knife" id="knife" name="weapons">KNIFE</option>
+					<option value="Crowbar" id="crowbar" name="weapons">CROWBAR</option>
+					<option value="Bazooka" id="bazooka" name="weapons">BAZOOKA!</option>
+				</select><br>
+				
+				<label class="headLabel">EXPLAIN WHY THIS ZOMBIE SHOULD DIE</label><br>
+				<textarea id="writing" name="text" rows="5" cols="40"> </textarea><br>
+				
+				<label class="headLabel">WHEN DO YOU WANT THIS DONE BY?</label><br>
+				<input type="date" id="deadLine" name="dated"/><br>
+				
+				<label class="headLabel">PLEASE RATE OUR SERVICE</label><br>
+				<input  type="range" id="stars" min="1" max="10"><br>
+				
+				<input type="hidden" id="customer" value="reputation">
+					
+				
+				<input id="button" type="button" value="SUBMIT">
+				</fieldset>
+				
+				
+			</form>
+			
+			<footer>
+				
+			</footer>
+		</div>
+		
+	</body>
+</html>
