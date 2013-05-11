@@ -1,0 +1,6 @@
+body {background-color: black;}
+#intro {color:red;text-align: center;}
+nav {margin-left: -30px;}
+nav, li {list-style-type: none;float: left;padding-right: 8px;}
+
+
