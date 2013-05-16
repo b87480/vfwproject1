@@ -1,6 +1,99 @@
-body {background-color: black;}
-#intro {color:red;text-align: center;}
-nav {margin-left: -30px;}
-nav, li {list-style-type: none;float: left;padding-right: 8px;}
+body {
+	background-color:black;
+}
+header {
+	font-family:"Copperplate Gothic Bold",sans-serif;
+	color:red;
+	font-size:28px;
+	text-align:center;
+}
+h1, h2, h4, a, p {
+	color:red;
+}
+fieldset {
+	border-color:#F00;
+    border-style: dotted;
+    margin-left:10px;
+    margin-right:10px;
+}
+legend {
+	color:#800000;
+	font-size:25px;
+	margin-top:20px;
+	padding:30px;
+}
+input {
+	margin-top:10px;
+	color:green;
+}	
+form {
+	color:white;
+}
+select {
+	margin-top:50px;
+	margin-bottom:30px;
+}
+textarea {
+	margin-top:50px;	
+}
+fieldset {
+	float:left;
+	clear:both;
+	overflow:hidden;
+	max-width:320px;
+}
+footer {
+	margin-top:50px;
+	clear:both;
+}
+.labelHead {
+	position:relative;
+	margin-bottom:20px;
+	padding-bottom:60px;
+}	
+.headLabel {
+	font-family:"Copperplate Gothic Bold",sans-serif;
+	color:red;
+	position:absolute;
+	font-size:20px;
+	margin-top:10px;
+	max-width:320px;
+}
+.radioButton {
+	margin-top:50px;
+}
+#but1, #but2, #but3, #but4 {
+	list-style-type:none;
+	display:block;
+	float:left;
+}
+#but1 {
+	margin-left:-29px;
+	padding-right:10px;
+}
+#but2 {
+	padding-right:10px;
+}
+#but3 {
+	padding-right:10px;
+}
+#firstname {
+	margin-top:-50px;
+}
+#lastname, #female, #whenever{
+	margin-bottom:20px;
+}
+#male, #immediate, #deadLine, #stars {
+	margin-top:50px;
+}
+#intro {
+	text-align:center;
+}
+#data {
+	color:white;
+	clear:both;
+	padding-top:30px;
+}
+
 
 

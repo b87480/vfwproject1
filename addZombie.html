@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- Joshua Whitney -->
-<!-- VFW 1305 -->
-<!-- Assignement 1 -->
+<!-- VFW 1304 -->
+<!-- Assignment 2 -->
 
 <html lang="en">
 	<head>
@@ -12,7 +12,7 @@
 		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
 		<meta name="author" content="Joshua Whitney" />
 		
-		
+		<link rel="stylesheet" type="text/css" href="zombie.css">
 
 
 		<title>Zombie Hit List</title>	
@@ -21,23 +21,23 @@
 	<body>
 		<div id="container">
 			<header>
-				<h1>ZOMBIE HIT LIST</h1>
+				<img id="logo" src="https://lh6.googleusercontent.com/-mishB1zoQiw/UY7E41mS5hI/AAAAAAAACMk/8p6oHSElmXk/w304-h39-no/banner3_03.png">
 			</header>
 			<nav id="nav1">
 				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="addZombie.html">ADD ZOMBIE!</a></li>
-					<li><a href="#" id="showzombie">SHOW ZOMBIE</a></li>
-					<li><a href="#" id="clearzombie">CLEAR ZOMBIE</a></li>
+					<li id="but1"><a href="index.html"><IMG 	SRC="https://lh6.googleusercontent.com/-QuRjrdLX8_E/UY7IsTQznqI/AAAAAAAACM0/Mw4ogv0vSo0/w66-h17-no/BUTTONS_03.png"></a></li>
+										<li id="but2"><a href="addZombie.html"><img src="https://lh3.googleusercontent.com/-75172QzwSxM/UY7IseCvgTI/AAAAAAAACMw/xFI5qbFi7vE/w45-h17-no/BUTTONS_05.png"></a></li>
+										<li id="but3"><a href="#" id="showzombie"><img src="https://lh4.googleusercontent.com/-8eq4-N0R3B8/UY7IsXZIioI/AAAAAAAACM8/cyFp3mY6Ulw/w67-h17-no/BUTTONS_07.png"></a></li>
+										<li id="but4"><a href="#" id="clearzombie"><img src="https://lh4.googleusercontent.com/-hkAG3ppPXqU/UY7IsssNPZI/AAAAAAAACM4/qRh1oQwdz8Y/w72-h17-no/BUTTONS_09.png"></a></li>
 				</ul>
 			</nav>
 			
 			<form action="#" method="post" id="myform">
-				<fieldset id="border">
+				<fieldset>
 					<legend>CLIENT INFORMATION</legend>
-				<div id="client" class="labelHead"><label class="headLabel">PLEASE REGISTER BEFORE ADDING A ZOMBIE</label></div>
-					<input type="text" id="fname" value="fname"  /><br>
-					<input type="text" id="lname" value="Last Name"  /><br>
+				<div class="labelHead"><label class="headLabel">PLEASE REGISTER BEFORE ADDING A ZOMBIE</label></div>
+					<input type="text" id="fname" placeholder="First Name"  /><br>
+					<input type="text" id="lname" placeholder="Last Name"  /><br>
 					<input type="email" id="clientemail" placeholder="Email Address"  /><br>
 					<input type="tel" id="clienttelephone" placeholder="1-111-111-1111" /><br>
 				</fieldset><br>
@@ -45,7 +45,7 @@
 					<legend>NEW ZOMBIE INFORMATION</legend>
 					
 		
-				<div id="zname" class="labelHead"><label class="headLabel">ENTER ZOMBIES NAME</label></div>
+				<div class="labelHead"><label class="headLabel">ENTER ZOMBIES NAME</label></div>
 					<label for="firstname">First Name:</label>
 					<input type="text" id="firstname" placeholder="FirstName" /><br>
 					<label for="lastname">Last Name:</label>
@@ -53,33 +53,30 @@
 			
 				
 				<label class="headLabel">IS THE ZOMBIE MALE OR FEMALE?</label><br>
-					<input type="radio" name="sex" value="male">Male<br>
+					<input type="radio" class="radioButton" name="sex" value="male">Male<br>
 					<input type="radio" name="sex" value="female">Female<br>
 				
 				<label class="headLabel">WHAT PRIORITY SHOULD THIS BE?</label><br>
-				<div id="priorityCheck">
+			
 					<input type="checkbox" id="immediate" name="priority" value="Immediate">Immediate!<br>
 					<input type="checkbox" id="high" name="priority" value="High">High<br>
 					<input type="checkbox" id="medium" name="priority" value="Medium">Medium<br>
 					<input type="checkbox" id="low" name="priority" value="Low">Low<br>
 					<input type="checkbox" id="whenever" name="priority" value="Whenever">When You Get Around To It<br>
-				</div>
+				
 				<label class="headLabel">PLEASE SELECT YOUR WEAPON OF CHOICE</label><br>
-				<select id="weapons" form="myform">
-					<option value="Gun" id="gun" name="weapons">GUN</option>
-					<option value="Knife" id="knife" name="weapons">KNIFE</option>
-					<option value="Crowbar" id="crowbar" name="weapons">CROWBAR</option>
-					<option value="Bazooka" id="bazooka" name="weapons">BAZOOKA!</option>
-				</select><br>
+				<div id="select">
+					
+				</div>
 				
 				<label class="headLabel">EXPLAIN WHY THIS ZOMBIE SHOULD DIE</label><br>
-				<textarea id="writing" name="text" rows="5" cols="40"> </textarea><br>
+				<textarea name="text" rows="5" cols="40"> </textarea><br>
 				
 				<label class="headLabel">WHEN DO YOU WANT THIS DONE BY?</label><br>
 				<input type="date" id="deadLine" name="dated"/><br>
 				
-				<label class="headLabel">PLEASE RATE OUR SERVICE</label><br>
-				<input  type="range" id="stars" min="1" max="10"><br>
+				<label class="headLabel">PLEASE RATE OUR SERVICES</label><br>
+				<input id="stars" type="range"  min="1" max="10"><br>
 				
 				<input type="hidden" id="customer" value="reputation">
 					
@@ -91,9 +88,11 @@
 			</form>
 			
 			<footer>
-				
+				<p>
+					&copy; Copyright  by Joshua Whitney
+				</p>
 			</footer>
 		</div>
-		
+		<script src="zombie.js" type="text/javascript"></script>
 	</body>
 </html>
